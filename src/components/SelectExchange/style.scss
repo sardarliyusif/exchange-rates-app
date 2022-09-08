@@ -1,0 +1,14 @@
+.select{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .currency__select .ant-select-selector{
+        text-align: center;
+        border-radius: 20px !important;
+        
+    }
+    .exchange__icon{
+        font-size: 25px;
+        color: #0E57D6;
+    }
+}
