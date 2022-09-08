@@ -11,7 +11,7 @@ function convert(
   to: string,
   rates: Rates
 ): number {
-  return value * (rates[to] / rates[from]);
+  return value * (rates[from] / rates[to]);
 }
 const App = () => {
   const [value, setValue] = useState<number>(100);

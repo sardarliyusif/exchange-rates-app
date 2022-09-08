@@ -1,5 +1,4 @@
 import { createContext, useState, useEffect, useCallback } from 'react';
-import dayjs from 'dayjs';
 import map from 'lodash/map';
 import { api } from 'api';
 import type {
@@ -63,7 +62,7 @@ export const ApiContext: ApiContextType = ({ children }) => {
 			const params = {
 				base: 'USD' };
 			const { data } = await api.get<RatesResponse>(
-				`/${dayjs().format('YYYY-DD-MM')}`,
+				`/2022-09-06`,
 				{ params }
 			);
 
